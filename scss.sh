@@ -16,4 +16,12 @@ sudo gem install sass
 # sass --watch input.scss:output.css
 # --------------------------------------------------------------
 sass --watch scss/app.scss:css/styles.min.css
+sass --watch scss/app.scss:css/styles.min.css & disown
+# --------------------------------------------------------------
+
+# --------------------------------------------------------------
+# Install APT (Advanced Packaging Tool)
+# --------------------------------------------------------------
+apt-get update && apt-get install ruby-full rubygems -y
+gem install sass
 # --------------------------------------------------------------
