@@ -1,3 +1,7 @@
+// Libraries
+@import 'bootstrap-3.3.7/_bootstrap.scss';
+@import 'font-awesome-4.7.0/font-awesome.scss';
+
 // Variables
 @import 'variables.scss';
 
@@ -7,8 +11,11 @@
 @import 'scaffolding.scss';
 
 // Components
+@import 'article.scss';
+@import 'aside.scss';
 @import 'controls.scss';
 @import 'footer.scss';
 @import 'header.scss';
 @import 'main.scss';
 @import 'navigation.scss';
+@import 'section.scss';
