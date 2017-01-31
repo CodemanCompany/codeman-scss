@@ -73,6 +73,28 @@
 	opacity:	$opacity;
 }
 
+@mixin placeholder ( $color ) {
+	:-moz-placeholder {
+		color:	$color;
+		text-align:	center;
+	}
+
+	::-moz-placeholder {
+		color:	$color;
+		text-align:	center;
+	}
+
+	:-ms-input-placeholder {
+		color:	$color;
+		text-align:	center;
+	}
+
+	::-webkit-input-placeholder {
+		color:	$color;
+		text-align:	center;
+	}
+}
+
 @mixin property( $property, $value ) {
 	#{$property}:			$value;
 	-moz-#{$property}:		$value;
