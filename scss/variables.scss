@@ -1,5 +1,5 @@
 $text-color:			#333;
-$brand-primary:			#fa6900;
+$brand-primary:			#000000;
 
 $gray-base:				#000;
 $gray-darker:			lighten( $gray-base, 13.5% );
@@ -20,3 +20,6 @@ $phone:					'only screen and ( max-width: 767px )';
 $tablet:				'only screen and ( min-width: 768px ) and ( max-width: 991px )';
 $desktop:				'only screen and ( min-width: 992px ) and ( max-width: 1199px )';
 $desktop-large:			'only screen and ( min-width: 1200px )';
+$desktop-x-large:		'only screen and ( min-width: 1400px )';
+$desktop-2x-large:		'only screen and ( min-width: 1600px )';
+$desktop-3x-large:		'only screen and ( min-width: 1900px )';
