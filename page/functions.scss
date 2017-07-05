@@ -1,7 +1,7 @@
 @mixin bg () {
-	background-position:center center;
-	background-repeat:	no-repeat;
-	background-size:	cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 @mixin blur ( $value ) {
@@ -21,17 +21,17 @@
 }
 
 @mixin center-vertical {
-	top:		50%;
+	top: 50%;
 	@include property( transform, translateY( -50% ) );
 }
 
 @mixin clean () {
-	border:			0;
-	border-radius:	0;
-	line-height:	100%;
-	margin:			0;
-	padding:		0;
-	overflow:		hidden;
+	border: 0;
+	border-radius: 0;
+	line-height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 	
 	@include property( box-shadow, none );
 }
@@ -46,61 +46,61 @@
 
 // TODO: Check
 @mixin font-smoothing {
-	$font-smoothing:		antialiased;
+	$font-smoothing: antialiased;
 
-	-webkit-font-smoothing:	$font-smoothing;
-	-moz-font-smoothing:	$font-smoothing;
-	font-smoothing:			$font-smoothing;
+	-webkit-font-smoothing: $font-smoothing;
+	-moz-font-smoothing: $font-smoothing;
+	font-smoothing: $font-smoothing;
 }
 
 @mixin link ( $color-base, $color_hover ) {
-	color:	$color-base;
+	color: $color-base;
 
 	&:hover,
 	&:focus {
-		color:				$color_hover;
-		text-decoration:	none;
+		color: $color_hover;
+		text-decoration: none;
 
 		@include transition( .1s );
 	}
 
 	&:active {
-		color:	$color_hover;
+		color: $color_hover;
 	}
 }
 
 @mixin opacity ( $opacity ) {
-	opacity:	$opacity;
+	opacity: $opacity;
 }
 
 @mixin placeholder ( $color ) {
 	:-moz-placeholder {
-		color:	$color;
-		text-align:	center;
+		color: $color;
+		text-align: center;
 	}
 
 	::-moz-placeholder {
-		color:	$color;
-		text-align:	center;
+		color: $color;
+		text-align: center;
 	}
 
 	:-ms-input-placeholder {
-		color:	$color;
-		text-align:	center;
+		color: $color;
+		text-align: center;
 	}
 
 	::-webkit-input-placeholder {
-		color:	$color;
-		text-align:	center;
+		color: $color;
+		text-align: center;
 	}
 }
 
 @mixin property( $property, $value ) {
-	#{$property}:			$value;
-	-moz-#{$property}:		$value;
-	-ms-#{$property}:		$value;
-	-o-#{$property}:		$value;
-	-webkit-#{$property}:	$value;
+	#{$property}: $value;
+	-moz-#{$property}: $value;
+	-ms-#{$property}: $value;
+	-o-#{$property}: $value;
+	-webkit-#{$property}: $value;
 }
 
 @mixin rotate ( $value ) {
