@@ -44,13 +44,8 @@
 	@include property( transform, rotate( $rotate ) scale( $scale ) );
 }
 
-// TODO: Check
 @mixin font-smoothing {
-	$font-smoothing: antialiased;
-
-	-webkit-font-smoothing: $font-smoothing;
-	-moz-font-smoothing: $font-smoothing;
-	font-smoothing: $font-smoothing;
+	@include property( font-smoothing, antialiased );
 }
 
 @mixin link ( $color-base, $color_hover ) {
@@ -113,4 +108,8 @@
 
 @mixin transition ( $duration ) {
 	@include property( transition, all $duration ease-in-out );
+}
+
+@mixin user-select {
+	@include property( user-select, none );
 }
