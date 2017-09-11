@@ -50,6 +50,8 @@
 
 @mixin link ( $color-base, $color_hover ) {
 	color: $color-base;
+	
+	@include user-select;
 
 	&:hover,
 	&:focus {

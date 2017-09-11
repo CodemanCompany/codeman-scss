@@ -2,5 +2,7 @@
 #{$desktop},
 #{$tablet},
 #{$phone} {
-	
+	label {
+		@include user-select;
+	}
 }
