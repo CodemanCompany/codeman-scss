@@ -18,6 +18,7 @@
   "homepage": "https://github.com/CodemanCompany/codeman-scss#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.2",
+    "animate.css": "^4.1.1",
     "bootstrap": "^5.2.0"
   }
 }
